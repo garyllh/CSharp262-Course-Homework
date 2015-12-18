@@ -1,0 +1,8 @@
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\bin\Debug\GuessNumberForHuman_Console.exe.config
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\bin\Debug\GuessNumberForHuman_Console.exe
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\bin\Debug\GuessNumberForHuman_Console.pdb
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\bin\Debug\GuessNumberLibrary.dll
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\bin\Debug\GuessNumberLibrary.pdb
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\obj\Debug\GuessNumberForHuman_Console.csprojResolveAssemblyReference.cache
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\obj\Debug\GuessNumberForHuman_Console.exe
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Console\obj\Debug\GuessNumberForHuman_Console.pdb

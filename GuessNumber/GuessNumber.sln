@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberLibrary", "GuessNumberLibrary\GuessNumberLibrary.csproj", "{96F40B80-EF72-43CB-B32F-9C50E0606E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberForHuman_Console", "GuessNumberForHuman_Console\GuessNumberForHuman_Console.csproj", "{563DF9F8-17B2-4219-9E36-74768DB2F297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberForComputer_Console", "GuessNumberForComputer_Console\GuessNumberForComputer_Console.csproj", "{ABB975EC-5D47-4568-A5E7-5FF5118DB0FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberForHuman_Form", "GuessNumberForHuman_Form\GuessNumberForHuman_Form.csproj", "{23409424-153C-41FC-B256-B8F5D97EE1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberForComputer_Form", "GuessNumberForComputer_Form\GuessNumberForComputer_Form.csproj", "{96A7F8A5-8AC3-4E51-8377-D908C6178C87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96F40B80-EF72-43CB-B32F-9C50E0606E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F40B80-EF72-43CB-B32F-9C50E0606E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F40B80-EF72-43CB-B32F-9C50E0606E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F40B80-EF72-43CB-B32F-9C50E0606E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563DF9F8-17B2-4219-9E36-74768DB2F297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563DF9F8-17B2-4219-9E36-74768DB2F297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563DF9F8-17B2-4219-9E36-74768DB2F297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563DF9F8-17B2-4219-9E36-74768DB2F297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB975EC-5D47-4568-A5E7-5FF5118DB0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB975EC-5D47-4568-A5E7-5FF5118DB0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB975EC-5D47-4568-A5E7-5FF5118DB0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB975EC-5D47-4568-A5E7-5FF5118DB0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23409424-153C-41FC-B256-B8F5D97EE1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23409424-153C-41FC-B256-B8F5D97EE1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23409424-153C-41FC-B256-B8F5D97EE1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23409424-153C-41FC-B256-B8F5D97EE1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A7F8A5-8AC3-4E51-8377-D908C6178C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A7F8A5-8AC3-4E51-8377-D908C6178C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A7F8A5-8AC3-4E51-8377-D908C6178C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A7F8A5-8AC3-4E51-8377-D908C6178C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberLibrary\obj\Debug\GuessNumberLibrary.csprojResolveAssemblyReference.cache
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberLibrary\bin\Debug\GuessNumberLibrary.dll
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberLibrary\bin\Debug\GuessNumberLibrary.pdb
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberLibrary\obj\Debug\GuessNumberLibrary.dll
+F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberLibrary\obj\Debug\GuessNumberLibrary.pdb
