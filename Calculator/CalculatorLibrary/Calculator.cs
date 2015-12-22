@@ -94,16 +94,16 @@ namespace CalculatorLibrary
             return result;
         }
 
-        public string MemoryHandle(char type)
+        public string MemoryHandle(string type)
         {
             switch (type)
             {
-                case 'c':
+                case "c":
                     this.memory = 0;
                     isVisibleMemoryLabel = false;
                     break;
 
-                case 'r':
+                case "r":
                     if (isVisibleMemoryLabel)
                     {
                         this.DisplayString = this.memory.ToString();
@@ -111,17 +111,17 @@ namespace CalculatorLibrary
 
                     break;
 
-                case 's':
+                case "s":
                     this.memory = double.Parse(this.DisplayString);
                     isVisibleMemoryLabel = true;
                     break;
 
-                case '+':
+                case "+":
                     this.memory += double.Parse(this.DisplayString);
                     isVisibleMemoryLabel = true;
                     break;
 
-                case '-':
+                case "-":
                     this.memory -= double.Parse(this.DisplayString);
                     isVisibleMemoryLabel = true;
                     break;
@@ -130,12 +130,12 @@ namespace CalculatorLibrary
             return this.DisplayString;
         }
 
-        public string ButtonSpecial(char type)
+        public string ButtonSpecial(String type)
         {
             string temp;
             switch (type)
             {
-                case '<':
+                case "<":
                     if (!resetClick)
                     {
                         temp = this.DisplayString.Substring(0, this.DisplayString.Length - 1);
@@ -143,19 +143,24 @@ namespace CalculatorLibrary
                     }
                     break;
 
-                case 'n':
+                case "n":
                     this.DisplayString = (double.Parse(this.DisplayString) * (-1)).ToString();
                     break;
 
-                case 'v':
+                case "v":
+
+                    if (double.Parse(this.DisplayString) < 0)
+                    {
+                        resetClick = true;
+                    }
                     this.DisplayString = Math.Sqrt(double.Parse(this.DisplayString)).ToString();
                     break;
 
-                case '%':
+                case "%":
                     this.DisplayString = (double.Parse(this.DisplayString) / (100)).ToString();
                     break;
 
-                case 'd':
+                case "d":
                     this.DisplayString = (1 / double.Parse(this.DisplayString)).ToString();
                     break;
             }

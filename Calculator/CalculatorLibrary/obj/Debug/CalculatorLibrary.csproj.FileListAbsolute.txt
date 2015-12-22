@@ -8,3 +8,8 @@ E:\MyCSharp\CSharp262-Course-Homework\Calculator\CalculatorLibrary\bin\Debug\Cal
 E:\MyCSharp\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.csprojResolveAssemblyReference.cache
 E:\MyCSharp\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
 E:\MyCSharp\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb
+F:\CS262_01\CSharp262-Course-Homework\Calculator\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\Calculator\CalculatorLibrary\bin\Debug\CalculatorLibrary.pdb
+F:\CS262_01\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.csprojResolveAssemblyReference.cache
+F:\CS262_01\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\Calculator\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb
