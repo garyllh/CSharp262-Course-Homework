@@ -12,7 +12,7 @@ namespace GuessNumberForHuman_Console
         private static void Main(string[] args)
         {
             GuessNumber objectGN = new GuessNumber();
-            objectGN.HowManaytimes = 1;
+            objectGN.HowManytimes = 1;
             int[] answer;
             int countNo = 0;
             string guessString;
@@ -41,6 +41,7 @@ namespace GuessNumberForHuman_Console
                         break;
                     }
 
+                    //將輸入值轉成array
                     guessStringTemp = guessString.Select(x => x.ToString()).ToArray();
 
                     //check user input data if error
@@ -50,7 +51,9 @@ namespace GuessNumberForHuman_Console
                         continue;
                     }
 
+                    //IsNumber除判斷是否為數字外,並將其轉換為數字陣列
                     guess = objectGN.IsNumber(guessStringTemp);
+
                     if (guess == null)
                     {
                         Console.WriteLine("Error:有非數字資料!!\n");

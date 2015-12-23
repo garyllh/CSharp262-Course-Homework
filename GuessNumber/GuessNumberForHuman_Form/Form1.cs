@@ -29,14 +29,14 @@ namespace GuessNumberForHuman_Form
             InitializeComponent();
         }
 
-        private void HandleNumberButtonClick(object sender, int number)
+        private void buttonClick(object sender, EventArgs e)
         {
             Button theButton = sender as Button;
             for (int i = 0; i < 4; i++)
             {
                 if (guessLabel[i] == "")
                 {
-                    guessLabel[i] = number.ToString();
+                    guessLabel[i] = theButton.Text;
                     theButton.Enabled = false;
                     theButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
                     break;
@@ -51,58 +51,8 @@ namespace GuessNumberForHuman_Form
         private void Form1_Load(object sender, EventArgs e)
         {
             objectGN = new GuessNumber();
-            objectGN.HowManaytimes = 1;
+            objectGN.HowManytimes = 1;
             answer = objectGN.GenerateAnswerNumber();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 1);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 2);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 3);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 4);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 5);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 6);
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 7);
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 8);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 9);
-        }
-
-        private void button0_Click(object sender, EventArgs e)
-        {
-            this.HandleNumberButtonClick(sender, 0);
         }
 
         private void buttonClear_Click(object sender, EventArgs e)

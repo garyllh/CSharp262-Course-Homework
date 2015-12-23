@@ -10,28 +10,18 @@ namespace GuessNumberLibrary
 {
     public class GuessNumber
     {
-        private int[][] numbers = new int[5040][];
-        private bool[] isChecked = new bool[5040];
-        private int howManaytimes = 10000;
-        private int[] randomNumber = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        private int[][] numbers = new int[5040][];  //記錄所有數字
+        private bool[] isChecked = new bool[5040];  //判斷 numbers 陣列的數字是否已經檢查過(true:已用過,false:未使用)
+        public int HowManytimes { get; set; } = 10000;   //預設執行次數(for computer guess)
+        private int[] randomNumber = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };  //給亂數取用的array
 
+        //log檔案處理變數(for computer guess,windows form type)
         private FileInfo finfo;
+
         private StreamWriter sw;
         private StreamReader sr;
 
-        public int HowManaytimes
-        {
-            get
-            {
-                return howManaytimes;
-            }
-
-            set
-            {
-                howManaytimes = value;
-            }
-        }
-
+        //將array 填滿所有數字(for computer guess)
         public void Init()
         {
             int count = 0;
@@ -54,16 +44,19 @@ namespace GuessNumberLibrary
                 }
         }
 
+        //將判斷的 array 全部改成 false (for computer guess)
         public void Reset()
         {
             for (int i = 0; i < isChecked.Length; i++)
                 isChecked[i] = false;
         }
 
+        //產生題目答案4個數字
         public int[] GenerateAnswerNumber()
         {
             Random random = new Random();
 
+            //將randomNumber打亂(此目的是因為由亂數取的數字,發現會有連續重複的情況)
             for (int i = 0; i < this.randomNumber.Length; i++)
             {
                 int idx = random.Next(i, 10);
@@ -72,12 +65,13 @@ namespace GuessNumberLibrary
                 this.randomNumber[idx] = tmp;
             }
 
+            //從randomNumber 取出 4個數字
             int[] answer = this.randomNumber.OrderBy(x => random.Next()).Take(4).ToArray();
-            //int[] answer = Enumerable.Range(0, 10).OrderBy(x => random.Next()).Take(4).ToArray();
 
             return answer;
         }
 
+        //取得要猜的數字(由 numbers中取出一個)(for computer)
         public int[] GetGuessCode()
         {
             for (int i = 0; i < numbers.Length; i++)
@@ -91,33 +85,7 @@ namespace GuessNumberLibrary
             return null;
         }
 
-        public void Start()
-        {
-            int count = 0;
-            int countGuessTimes;
-            int[] answer;
-            int[] guessCode;
-            int[] returnAnswerArray;
-
-            while (count <= this.howManaytimes)
-            {
-                count++;
-                countGuessTimes = 0;
-                Reset();
-                answer = GenerateAnswerNumber();
-                while (true)
-                {
-                    countGuessTimes++;
-                    guessCode = GetGuessCode();
-                    returnAnswerArray = Compare(guessCode, answer);
-                    if (returnAnswerArray[0] == 4 && returnAnswerArray[1] == 0)
-                        break;
-                    DeleteNumber(guessCode, returnAnswerArray);
-                }
-            }
-            //output
-        }
-
+        //猜的數字與答案比較,回傳一個array,[0]:A的數字,[1]:B的數字
         public int[] Compare(int[] guess, int[] answer)
         {
             int[] returnAnswerArray = new int[2];
@@ -137,6 +105,7 @@ namespace GuessNumberLibrary
             return returnAnswerArray;
         }
 
+        //將所有未檢查過的數字中,去除與猜測數字同樣AB值得數字(for computer)
         public void DeleteNumber(int[] guess, int[] returnAnswerArray)
         {
             for (int i = 0; i < numbers.Length; i++)
@@ -146,6 +115,7 @@ namespace GuessNumberLibrary
             }
         }
 
+        //比較單一數字與猜測數字,是否同樣AB值
         public bool IsMatch(int[] guess, int[] number, int[] returnAnswerArray)
         {
             int countA = 0;
@@ -167,17 +137,20 @@ namespace GuessNumberLibrary
             return (returnAnswerArray[0] == countA && returnAnswerArray[1] == countB);
         }
 
+        //判斷是否有相同數字出現(for human,console type)
         public Boolean IsNotDuplicate(int[] c)
         {
             int[] q = c.Distinct().ToArray();
             return (q.Length == 4 ? true : false);
         }
 
+        //判斷輸入長度是否為4(for human,console type)
         public bool IsCorrectLength(string[] c)
         {
             return c.Length == 4 ? true : false;
         }
 
+        //判斷是否為數字(for human,console type)
         public int[] IsNumber(string[] c)
         {
             int[] returnIntArray = new int[4];
@@ -196,12 +169,15 @@ namespace GuessNumberLibrary
             return returnIntArray;
         }
 
+        //log存檔(for computer,windows form type)
+        //開檔
         public void FileCreate()
         {
             finfo = new FileInfo("guess.log");
             sw = finfo.CreateText();
         }
 
+        //寫檔(格式 G00001,1,1234,1A1B)
         public void WriteLog(int questionno, int serialno, int[] guess, int[] result)
         {
             string data = "";
@@ -214,11 +190,13 @@ namespace GuessNumberLibrary
             this.sw.WriteLine(data);
         }
 
+        //關檔
         public void CloseFileInput()
         {
             this.sw.Close();
         }
 
+        //讀取檔案資料(回傳 Arraylist)
         public ArrayList ReadLog(string question)
         {
             this.sr = new StreamReader("guess.log");
@@ -231,7 +209,6 @@ namespace GuessNumberLibrary
                 data = this.sr.ReadLine();
 
                 if (data == null) break;
-                //temp = data.Select(x => x.ToString()).ToArray();
                 temp = data.Split(',');
                 if (temp[0] == ("G" + question))
                 {

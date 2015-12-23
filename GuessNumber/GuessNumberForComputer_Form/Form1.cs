@@ -24,7 +24,7 @@ namespace GuessNumberForComputer_Form
         private void Form1_Load(object sender, EventArgs e)
         {
             objectGN = new GuessNumber();
-            objectGN.HowManaytimes = 1;
+            objectGN.HowManytimes = 1;
             objectGN.Init();
             labelResultMessage.Text = "請輸入執行次數，然後點選[開始執行]....";
         }
@@ -71,12 +71,12 @@ namespace GuessNumberForComputer_Form
             }
             else
             {
-                objectGN.HowManaytimes = howManyTimes;
+                objectGN.HowManytimes = howManyTimes;
                 buttonStart.Enabled = false;
             }
             objectGN.FileCreate();
             labelResultMessage.Text = "執行中.................";
-            while (count < objectGN.HowManaytimes)
+            while (count < objectGN.HowManytimes)
             {
                 count++;
                 countGuessTimes = 0;
@@ -109,8 +109,8 @@ namespace GuessNumberForComputer_Form
                 i1.SubItems.Add(sub_i2);
                 listView1.Items.Add(i1);
             }
-            labelResultMessage.Text = "執行 " + objectGN.HowManaytimes + " 題,平均每題使用 " +
-                Math.Round((float)sumEachGuessTimes / (float)objectGN.HowManaytimes, 2)
+            labelResultMessage.Text = "執行 " + objectGN.HowManytimes + " 題,平均每題使用 " +
+                Math.Round((float)sumEachGuessTimes / (float)objectGN.HowManytimes, 2)
                 + " 次(點選各題編號可顯示每次記錄)";
             objectGN.CloseFileInput();
         }

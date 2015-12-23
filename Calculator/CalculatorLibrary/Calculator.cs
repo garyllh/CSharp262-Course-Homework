@@ -8,13 +8,15 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        private double preData = 0;
-        private string preAction = "";
-        public bool resetClick = false;
-        public string DisplayString = "0";
-        public double memory = 0;
-        public bool isVisibleMemoryLabel = false;
+        private double preData = 0;  //之前計算後的值
+        private string preAction = "";  //準備執行的動作
+        public bool resetClick = false; //輸入數字鍵時,判斷是否要清除顯示的資料true:清除,false:加到最後
+        public string DisplayString = "0";  //目前顯示的資料
 
+        public double memory = 0;  //目前在 memory 的值
+        public bool isVisibleMemoryLabel = false;  //顯示M
+
+        //for C 鍵
         public void Refresh()
         {
             preData = 0;
@@ -23,23 +25,26 @@ namespace CalculatorLibrary
             DisplayString = "0";
         }
 
+        //數字按鍵
         public string ButtonNumber(string btnValue)
         {
             if (resetClick)
             {
+                //之前如按了加減乘除等按鍵,此時重新由個位數開始
                 DisplayString = (btnValue == "." ? "0." : btnValue);
                 resetClick = false;
             }
             else
             {
-                if (DisplayString.Length < 16)
+                if (DisplayString.Length < 16)  //長度要小於16
                 {
-                    if (btnValue == ".")
+                    if (btnValue == ".")  //小數點按鍵直接加在後面
                     {
                         DisplayString += btnValue;
                     }
                     else
                     {
+                        //非小數點按鍵,判斷目前顯示是否為0,如果是0,則要先清除                    {
                         DisplayString = (DisplayString == "0" ? "" : DisplayString) + btnValue;
                     }
                 }
@@ -47,16 +52,21 @@ namespace CalculatorLibrary
             return DisplayString;
         }
 
+        //加減乘除按鍵
         public string ButtonAction(string btnAction)
         {
             string result;
+
+            //先處理先前所設定的動作
             if (preAction == "")
             {
+                //如果之前未有任何加減乘除動作,則將目前顯示的值,放入predata
                 preData = double.Parse(DisplayString);
                 result = DisplayString;
             }
             else
             {
+                //如果之前有任何加減乘除動作,則先計算,放入計算結果
                 switch (preAction)
                 {
                     case "+":
@@ -81,6 +91,9 @@ namespace CalculatorLibrary
                 }
                 result = preData.ToString();
             }
+
+            //處理目前所按的動作鍵
+            //等號
             if (btnAction == "=")
             {
                 preAction = "";
@@ -88,12 +101,14 @@ namespace CalculatorLibrary
             }
             else
             {
+                //加減乘除
                 preAction = btnAction;
             }
             resetClick = true;
             return result;
         }
 
+        //Memory的處理
         public string MemoryHandle(string type)
         {
             switch (type)
@@ -130,6 +145,7 @@ namespace CalculatorLibrary
             return this.DisplayString;
         }
 
+        //特殊按鍵處理
         public string ButtonSpecial(String type)
         {
             string temp;

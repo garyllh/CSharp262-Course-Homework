@@ -6,3 +6,11 @@ F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bi
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.csprojResolveAssemblyReference.cache
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.exe
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bin\Debug\GuessNumberForComputer_Console.exe.config
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.exe
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\obj\Debug\GuessNumberForComputer_Console.csprojResolveAssemblyReference.cache
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bin\Debug\GuessNumberForComputer_Console.exe
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bin\Debug\GuessNumberForComputer_Console.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bin\Debug\GuessNumberLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForComputer_Console\bin\Debug\GuessNumberLibrary.pdb

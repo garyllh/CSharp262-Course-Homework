@@ -15,19 +15,19 @@ namespace GuessNumberForComputer_Console
             int inputGuessTimes;
             string temp;
 
-            int count = 0;
+            int count = 0;  //目前執行到第幾題
             int countGuessTimes;
             int[] answer;
             int[] guess;
             int[] returnAnswerArray;
 
-            int sumEachGuessTimes;
+            int sumEachGuessTimes;  //記錄每題猜的次數
 
             GuessNumber objectGN = new GuessNumber();
-            objectGN.HowManaytimes = 10000;
+            objectGN.HowManytimes = 10000;
             objectGN.Init();
 
-            while (true)
+            while (true)  //for 重玩所使用的迴圈
             {
                 count = 0;
                 sumEachGuessTimes = 0;
@@ -36,13 +36,13 @@ namespace GuessNumberForComputer_Console
                 Console.WriteLine("猜數字遊戲(2)電腦自己出題及猜題!!! \n\n遊戲開始.......................\n");
 
                 // Console.WriteLine("---- 電腦自己出題及猜題!!! \n\n遊戲開始.......................\n");
-                Console.Write("請輸入執行次數(預設次數 = {0} ):", objectGN.HowManaytimes);
+                Console.Write("請輸入執行次數(預設次數 = {0} ):", objectGN.HowManytimes);
 
                 temp = Console.ReadLine();
                 if (temp != "")
                     if (int.TryParse(temp, out inputGuessTimes))
                     {
-                        objectGN.HowManaytimes = inputGuessTimes;
+                        objectGN.HowManytimes = inputGuessTimes;
                     }
                     else
                     {
@@ -51,7 +51,7 @@ namespace GuessNumberForComputer_Console
                         continue;
                     }
 
-                while (count < objectGN.HowManaytimes)
+                while (count < objectGN.HowManytimes)  //執行的迴圈
                 {
                     count++;
                     countGuessTimes = 0;
@@ -70,6 +70,7 @@ namespace GuessNumberForComputer_Console
                             returnAnswerArray[1]);
                         if (returnAnswerArray[0] == 4 && returnAnswerArray[1] == 0)
                         {
+                            //猜到
                             sumEachGuessTimes += countGuessTimes;
                             break;
                         }
@@ -77,9 +78,8 @@ namespace GuessNumberForComputer_Console
                     }
                 }
                 //output
-                //Console.WriteLine(" {0} / {1} ", (float)sumEachGuessTimes, (float)objectGN.HowManaytimes);
 
-                Console.WriteLine("\n執行 {0} 題,平均每題使用 {1} 次", objectGN.HowManaytimes, ((float)sumEachGuessTimes / (float)objectGN.HowManaytimes));
+                Console.WriteLine("\n執行 {0} 題,平均每題使用 {1} 次", objectGN.HowManytimes, ((float)sumEachGuessTimes / (float)objectGN.HowManytimes));
 
                 Console.WriteLine("\n重新玩一次(y/n)?");
                 retry = Console.ReadLine();

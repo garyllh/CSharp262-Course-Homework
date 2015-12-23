@@ -9,3 +9,14 @@ F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debu
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.pdb
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberLibrary.dll
 F:\CS262\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberLibrary.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberForHuman_Form.exe.config
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.exe
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.csprojResolveAssemblyReference.cache
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.Form1.resources
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.Properties.Resources.resources
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\obj\Debug\GuessNumberForHuman_Form.csproj.GenerateResource.Cache
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberForHuman_Form.exe
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberForHuman_Form.pdb
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\GuessNumber\GuessNumberForHuman_Form\bin\Debug\GuessNumberLibrary.pdb
