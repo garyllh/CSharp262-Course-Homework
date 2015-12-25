@@ -1,0 +1,9 @@
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\bin\Debug\TestScores.exe.config
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\bin\Debug\TestScores.exe
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\bin\Debug\TestScores.pdb
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\obj\Debug\TestScores.csprojResolveAssemblyReference.cache
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\obj\Debug\TestScores.exe
+F:\CS262\CSharp262-Course-Homework\TestScores\TestScores\obj\Debug\TestScores.pdb
+F:\CS262_01\CSharp262-Course-Homework\TestScores\TestScores\bin\Debug\TestScores.exe.config
+F:\CS262_01\CSharp262-Course-Homework\TestScores\TestScores\obj\Debug\TestScores.exe
+F:\CS262_01\CSharp262-Course-Homework\TestScores\TestScores\obj\Debug\TestScores.pdb

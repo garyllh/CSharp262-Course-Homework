@@ -1,0 +1,10 @@
+F:\CS262\CSharp262-Course-Homework\BookingSystem\BookingLibrary\bin\Debug\BookingLibrary.dll
+F:\CS262\CSharp262-Course-Homework\BookingSystem\BookingLibrary\bin\Debug\BookingLibrary.pdb
+F:\CS262\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.csprojResolveAssemblyReference.cache
+F:\CS262\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.dll
+F:\CS262\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.pdb
+F:\CS262_01\CSharp262-Course-Homework\BookingSystem\BookingLibrary\bin\Debug\BookingLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\BookingSystem\BookingLibrary\bin\Debug\BookingLibrary.pdb
+F:\CS262_01\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.csprojResolveAssemblyReference.cache
+F:\CS262_01\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.dll
+F:\CS262_01\CSharp262-Course-Homework\BookingSystem\BookingLibrary\obj\Debug\BookingLibrary.pdb
