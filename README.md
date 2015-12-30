@@ -19,6 +19,6 @@ TestScores 成績排序<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;TestScores(Console 執行程式)
 
 Discount 訂票程式(策略模式)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;DiscountClassLibrary(共用Library)
-&nbsp;&nbsp;&nbsp;&nbsp;DiscountExample(Console 測試使用)
-&nbsp;&nbsp;&nbsp;&nbsp;DiscountExample2(Form 執行程式)
+&nbsp;&nbsp;&nbsp;&nbsp;DiscountClassLibrary(共用Library)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;DiscountExample(Console 測試使用)<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp;DiscountExample2(Form 執行程式)<br/> 
