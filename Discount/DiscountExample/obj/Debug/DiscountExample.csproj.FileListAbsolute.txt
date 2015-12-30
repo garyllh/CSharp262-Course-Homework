@@ -1,0 +1,8 @@
+F:\CS262\Discount\DiscountExample\bin\Debug\DiscountExample.exe.config
+F:\CS262\Discount\DiscountExample\bin\Debug\DiscountExample.exe
+F:\CS262\Discount\DiscountExample\bin\Debug\DiscountExample.pdb
+F:\CS262\Discount\DiscountExample\bin\Debug\DiscountClassLibrary.dll
+F:\CS262\Discount\DiscountExample\bin\Debug\DiscountClassLibrary.pdb
+F:\CS262\Discount\DiscountExample\obj\Debug\DiscountExample.csprojResolveAssemblyReference.cache
+F:\CS262\Discount\DiscountExample\obj\Debug\DiscountExample.exe
+F:\CS262\Discount\DiscountExample\obj\Debug\DiscountExample.pdb

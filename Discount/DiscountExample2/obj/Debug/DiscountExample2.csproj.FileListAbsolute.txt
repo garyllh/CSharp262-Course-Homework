@@ -1,0 +1,11 @@
+F:\CS262\Discount\DiscountExample2\bin\Debug\DiscountExample2.exe.config
+F:\CS262\Discount\DiscountExample2\bin\Debug\DiscountExample2.exe
+F:\CS262\Discount\DiscountExample2\bin\Debug\DiscountExample2.pdb
+F:\CS262\Discount\DiscountExample2\bin\Debug\DiscountClassLibrary.dll
+F:\CS262\Discount\DiscountExample2\bin\Debug\DiscountClassLibrary.pdb
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.csprojResolveAssemblyReference.cache
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.Form1.resources
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.Properties.Resources.resources
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.csproj.GenerateResource.Cache
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.exe
+F:\CS262\Discount\DiscountExample2\obj\Debug\DiscountExample2.pdb
